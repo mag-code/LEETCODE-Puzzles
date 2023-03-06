@@ -12,6 +12,7 @@ class Solution:
                 return True
             return False
         return False
+    def isAnagram(self, s: str, t: str) -> bool:
 #solution 2
         if len(s) == len(t):           
             news,newt=sorted(s),sorted(t)
