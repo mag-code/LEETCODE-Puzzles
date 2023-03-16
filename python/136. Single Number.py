@@ -5,12 +5,14 @@ class Solution:
         for i in nums:
             single ^= i
         return nums
+#solution 2
     def singleNumber(self, nums: List[int]) -> int:
         for i in range(len(nums)):
             single = nums.pop(0)
             if single not in nums:
                 return single 
             nums.append(single)
+#solution 3
     def singleNumber(self, nums: List[int]) -> int:
         nums.sort()
         i=0
